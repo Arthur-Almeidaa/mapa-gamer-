@@ -1,0 +1,66 @@
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.predio {
+  width: 650px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
+}
+
+/* Overlays por andar */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+/* Previews no hover */
+.andar-preview {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.overlay:hover .andar-preview {
+  opacity: 0.9;
+  border: 2px solid #00ffcc; /* opcional: destaque no hover */
+}
+
+/* Posição dos andares */
+.andar1 { top: 80%; }
+.andar2 { top: 60%; }
+.andar3 { top: 40%; }
+.andar4 { top: 20%; }
+.andar5 { top: 0%; }
+
+/* Imagens de preview */
+.andar1 .andar-preview { background-image: url('imgs/andar1.jpg'); }
+.andar2 .andar-preview { background-image: url('imgs/andar2.jpg'); }
+.andar3 .andar-preview { background-image: url('imgs/andar3.jpg'); }
+.andar4 .andar-preview { background-image: url('imgs/andar4.jpg'); }
+.andar5 .andar-preview { background-image: url('imgs/andar5.jpg'); }
