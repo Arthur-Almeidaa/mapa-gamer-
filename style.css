@@ -12,7 +12,7 @@ body {
 }
 
 .predio {
-  width: 650px;
+  width: 800px;
   display: block;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
@@ -68,5 +68,18 @@ body {
 @media (max-width: 480px) {
   .predio {
     width: 90vw;
+    height: 90vh;
   }
 }
+
+@media (max-width: 316px) {
+  }
+
+  .predio {
+    width: 100vw;
+    height: 90vh;
+  }
+
+  
+
+
