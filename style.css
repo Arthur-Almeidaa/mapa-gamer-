@@ -64,3 +64,9 @@ body {
 .andar3 .andar-preview { background-image: url('imgs/andar3.jpg'); }
 .andar4 .andar-preview { background-image: url('imgs/andar4.jpg'); }
 .andar5 .andar-preview { background-image: url('imgs/andar5.jpg'); }
+
+@media (max-width: 480px) {
+  .predio {
+    width: 90vw;
+  }
+}
