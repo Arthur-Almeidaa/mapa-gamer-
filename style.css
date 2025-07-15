@@ -3,7 +3,21 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  
+  color: #00ffcc;
+  font-size: 1rem;
+}
+
+.clique {
+  color: #00ffcc;
+  margin-top: 2px;
 }
 
 .container {
@@ -47,10 +61,12 @@ body {
   pointer-events: none;
 }
 
-.overlay:hover .andar-preview {
+.overlay:hover .andar-preview,
+.overlay.ativo .andar-preview {
   opacity: 0.9;
-  border: 2px solid #00ffcc; /* opcional: destaque no hover */
+  border: 2px solid #00ffcc;
 }
+
 
 /* Posição dos andares */
 .andar1 { top: 80%; }
@@ -71,6 +87,8 @@ body {
     width: 90vw;
     height: 90vh;
   }
+
+  
 }
 
 @media (max-width: 316px) {

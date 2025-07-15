@@ -7,24 +7,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <div class="container">
     <img src="imgs/predio.png" alt="Exceed Park" class="predio">
-
+    
     <a href="andar1.html" class="overlay andar1">
+      <H1 style="margin-top: 27px;">1º Andar</H1>
       <div class="andar-preview"></div>
     </a>
     <a href="andar2.html" class="overlay andar2">
+      <H1 style="margin-top: 30px;">2º Andar</H1>
       <div class="andar-preview"></div>
     </a>
     <a href="andar3.html" class="overlay andar3">
+      <H1>3º Andar</H1>
       <div class="andar-preview"></div>
     </a>
     <a href="andar4.html" class="overlay andar4">
+      <H1>4º Andar</H1>
       <div class="andar-preview"></div>
     </a>
     <a href="andar5.html" class="overlay andar5">
+      <h3 class="clique">Clique no andar para ver suas atrações!</h3>
+      <H1 style="margin-top: 42px">5º Andar</H1>
       <div class="andar-preview"></div>
     </a>
   </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    let ultimoClicado = null;
+    const overlays = document.querySelectorAll('.overlay');
+
+    overlays.forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          if (overlay.classList.contains('ativo')) {
+            // Segundo clique: permite o link seguir
+            return true;
+          } else {
+            // Primeiro clique: ativa o preview
+            e.preventDefault();
+            removerAtivos();
+            overlay.classList.add('ativo');
+            ultimoClicado = overlay;
+          }
+        }
+      });
+    });
+
+    // Clica fora = remove todos os previews
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.overlay')) {
+        removerAtivos();
+        ultimoClicado = null;
+      }
+    });
+
+    function removerAtivos() {
+      document.querySelectorAll('.overlay.ativo').forEach(el => el.classList.remove('ativo'));
+    }
+  });
+</script>
+
 </body>
 </html>
