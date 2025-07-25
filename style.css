@@ -1,13 +1,14 @@
 body {
   background: linear-gradient(135deg, #1704F4 0%, #00ff04 100%);
-  background-position: right bottom; /* ou ajuste conforme quiser */
-  background-size: contain; /* ou 'cover' se quiser preencher tudo */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  background-position: center;
+  background-size: cover;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   
 }
@@ -37,7 +38,8 @@ body {
 
 .container {
   position: relative;
-  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
 
 .predio {
@@ -50,17 +52,16 @@ body {
 }
 
 .icon3d {
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 160px;
-            height: auto;
-            opacity: 50;
-            mix-blend-mode: overlay;
-            z-index: -1;
-            pointer-events: none;
-        }
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
+  opacity: 300;
+  z-index: -1;
+  pointer-events: none;
+  }
 
 /* Overlays por andar */
 .overlay {
