@@ -49,6 +49,19 @@ body {
   box-shadow: 0 2px 8px rgb(255, 255, 255);
 }
 
+.icon3d {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: auto;
+            opacity: 50;
+            mix-blend-mode: overlay;
+            z-index: -1;
+            pointer-events: none;
+        }
+
 /* Overlays por andar */
 .overlay {
   position: absolute;
@@ -118,18 +131,22 @@ body {
 .andar5 .andar-preview { background-image: url('imgs/andar5.jpg'); }
 
 /* Responsivo */
-@media (max-width: 768px) {
-  .predio {
-    width: 90vw;
-    height: auto;
-  }
-}
-
 @media (max-width: 480px) {
   .predio {
     width: 100vw;
-    height: auto;
+    height: 100vh;
+    object-fit: cover; /* cobre a tela mantendo proporção */
   }
+}
+
+/* Para telas maiores (PC, tablets, etc) */
+@media (min-width: 481px) {
+  .predio {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
 
   .andar-label {
     font-size: 12px;
