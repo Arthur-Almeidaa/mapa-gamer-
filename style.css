@@ -112,14 +112,13 @@ body {
 .language-select {
   position: absolute;
   top: 520%;
-  left: 35%;
-
+  left: 40%;
   width: 100px;
-
+  border-radius: 6px;
   z-index: 0;
   pointer-events: none;
-   background-color: #0078d4;
-   color: #fff;
+  background-color: #0078d4;
+  color: #fff;
   }
   .language-select:hover {
    background-color: #005a9e;
