@@ -109,6 +109,23 @@ body {
   z-index: 4;
 }
 
+.language-select {
+  position: absolute;
+  top: 520%;
+  left: 35%;
+
+  width: 100px;
+
+  z-index: 0;
+  pointer-events: none;
+   background-color: #0078d4;
+   color: #fff;
+  }
+  .language-select:hover {
+   background-color: #005a9e;
+  }
+
+
 /* Previews no hover e toque */
 .andar-preview {
   position: absolute;
@@ -168,3 +185,4 @@ body {
     top: -24px;
   }
 }
+

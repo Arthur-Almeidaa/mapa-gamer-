@@ -38,41 +38,14 @@
         <h3 class="clique">CLIQUE NO ANDAR!</h3>
         <span class="andar-label">4º Andar</span>
         <div class="andar-preview"></div>
+         <select class="language-select" onchange="changeLanguage(this.value)">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
       </a>
     </div>
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      let ultimoClicado = null;
-      const overlays = document.querySelectorAll('.overlay');
-
-      overlays.forEach(overlay => {
-        overlay.addEventListener('click', (e) => {
-          if (window.innerWidth <= 768) {
-            if (overlay.classList.contains('ativo')) {
-              return true;
-            } else {
-              e.preventDefault();
-              removerAtivos();
-              overlay.classList.add('ativo');
-              ultimoClicado = overlay;
-            }
-          }
-        });
-      });
-
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.overlay')) {
-          removerAtivos();
-          ultimoClicado = null;
-        }
-      });
-
-      function removerAtivos() {
-        document.querySelectorAll('.overlay.ativo').forEach(el => el.classList.remove('ativo'));
-      }
-    });
-  </script>
+ 
 </body>
 </html>
