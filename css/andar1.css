@@ -64,13 +64,30 @@
       margin-top: 40px;
     }
 
-    .voltar {
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
+ 
+   
+  .voltar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e5efc;
+  color: rgb(255, 255, 255);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: 20px;
 
-    .voltar:hover {
-      text-decoration: underline;
-    }
+}
+
+.voltar:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.icone-voltar {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
