@@ -69,6 +69,17 @@ body {
   pointer-events: none;
 }
 
+.logo {
+  position: absolute;
+  top: 103%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  opacity: 25;
+  z-index: 0;
+  pointer-events: none;
+}
+
 .overlay {
   position: absolute;
   width: 100%;
