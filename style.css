@@ -53,15 +53,14 @@ body {
 
 .icon3d {
   position: absolute;
-  top: 100%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: auto;
-  opacity: 300;
-  z-index: -1;
+  width: 300px;
+  opacity: 0.15;
+  z-index: 0;
   pointer-events: none;
-  }
+}
 
 /* Overlays por andar */
 .overlay {
