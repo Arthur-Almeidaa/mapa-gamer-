@@ -2,6 +2,7 @@ body {
   background: linear-gradient(135deg, #1704F4 0%, #00ff04 100%);
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   height: 100vh;
@@ -80,6 +81,29 @@ body {
   pointer-events: none;
 }
 
+.instagram {
+  position: absolute;
+  top: 110%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  width: 43px;
+  opacity: 25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.redes {
+  position: absolute;
+  top: 121%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  width: 43px;
+  opacity: 25;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
 .logo {
   position: absolute;
   top: -5%;
@@ -143,7 +167,6 @@ body {
   background-color: #00ffcc;
   color: rgb(0, 0, 0);
 }
-
 
 
 
