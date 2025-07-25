@@ -46,7 +46,7 @@ body {
   height: auto;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
+  box-shadow: 0 2px 8px rgb(255, 255, 255);
 }
 
 /* Overlays por andar */
