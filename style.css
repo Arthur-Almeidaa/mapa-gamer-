@@ -41,12 +41,13 @@ body {
 }
 
 .predio {
-  width: 650px;
-  max-width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
   display: block;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(255, 255, 255);
+
+
+
 }
 
 .icon3d {
