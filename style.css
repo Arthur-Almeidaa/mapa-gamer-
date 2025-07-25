@@ -58,18 +58,17 @@ body {
   box-shadow: 0 2px 8px rgb(255, 255, 255);
 }
 
-/*.icon3d {
+.icon3d {
   position: absolute;
-  top: 0%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  opacity: 30;
+  width: 250px;
+  opacity: 25;
   z-index: 0;
   pointer-events: none;
 }
 
-Overlays por andar */
 .overlay {
   position: absolute;
   width: 100%;
