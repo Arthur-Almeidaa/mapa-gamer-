@@ -41,13 +41,12 @@ body {
 }
 
 .predio {
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
+  width: 650px;
+  max-width: 100%;
+  height: auto;
   display: block;
-
-
-
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(255, 255, 255);
 }
 
 .icon3d {
@@ -132,22 +131,18 @@ body {
 .andar5 .andar-preview { background-image: url('imgs/andar5.jpg'); }
 
 /* Responsivo */
-@media (max-width: 480px) {
+@media (max-width: 316px) {
   .predio {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* cobre a tela mantendo proporção */
+    width: 110vw;
+    height: auto;
   }
 }
 
-/* Para telas maiores (PC, tablets, etc) */
-@media (min-width: 481px) {
+@media (max-width: 480px) {
   .predio {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    width: 300vw;
+    height: auto;
   }
-}
 
   .andar-label {
     font-size: 12px;
@@ -158,4 +153,4 @@ body {
     font-size: 0.8rem;
     top: -24px;
   }
-
+}
