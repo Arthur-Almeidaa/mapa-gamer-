@@ -58,7 +58,7 @@ body {
   box-shadow: 0 2px 8px rgb(255, 255, 255);
 }
 
-.icon3d {
+/*.icon3d {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -69,7 +69,7 @@ body {
   pointer-events: none;
 }
 
-/* Overlays por andar */
+Overlays por andar */
 .overlay {
   position: absolute;
   width: 100%;
