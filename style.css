@@ -109,20 +109,32 @@ body {
   z-index: 4;
 }
 
+.idioma-wrapper {
+  margin-top: 20px;
+}
+
 .language-select {
-  position: absolute;
-  top: 520%;
-  left: 38%;
-  width: 100px;
+  background-color: #0b44ad;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
   border-radius: 6px;
-  z-index: 0;
-  pointer-events: none;
-  background-color: #0078d4;
-  color: #fff;
-  }
-  .language-select:hover {
-   background-color: #005a9e;
-  }
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgb(255, 255, 255);
+}
+
+.language-select:focus {
+  outline: none;
+}
+
+.language-select option {
+  background-color: #00ffcc;
+  color: rgb(0, 0, 0);
+}
+
+
+
 
 
 /* Previews no hover e toque */
