@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #0f0f0f, #1f1f1f);
-  color: #fff;
+  font-family: "Outfit", sans-serif;
+  background: linear-gradient(135deg, #1704F4 0%, #00ff04 100%);
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
@@ -68,13 +68,22 @@ footer {
   margin-top: 40px;
 }
 
-.voltar {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-}
+    .voltar {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
+      margin-top: 20px;
+      
+    }
 
-.voltar:hover {
-  text-decoration: underline;
-}
+    .voltar:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
