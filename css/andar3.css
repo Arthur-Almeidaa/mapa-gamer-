@@ -1,10 +1,10 @@
  body {
       margin: 0;
-      min-height: 100%;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #0f0f0f, #1f1f1f);
+      font-family: "Outfit", sans-serif;
+      background: linear-gradient(135deg, #1704F4 0%, #00ff04 100%);
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -22,7 +22,7 @@
     }
 
     .atracoes {
-      display: flex;
+
       justify-content: center;
       margin-bottom: 40px;
       gap: 20px;
@@ -31,7 +31,7 @@
     .card {
       background: #222;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+      box-shadow: 0 2px 8px rgb(255, 255, 255);
       overflow: hidden;
       max-width: 350px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -66,12 +66,21 @@
     }
 
     .voltar {
-      color: #00ffcc;
-      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
       font-weight: bold;
+      text-decoration: none;
       font-size: 1rem;
+      margin-top: 20px;
+      
     }
 
     .voltar:hover {
-      text-decoration: underline;
+      background-color: #0056b3;
+      text-decoration: none;
     }
