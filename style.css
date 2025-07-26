@@ -81,27 +81,6 @@ body {
   pointer-events: none;
 }
 
-.instagram {
-  position: absolute;
-  top: 110%;
-  left: 11%;
-  transform: translate(-50%, -50%);
-  width: 43px;
-  opacity: 25;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.redes {
-  position: absolute;
-  top: 121%;
-  left: 11%;
-  transform: translate(-50%, -50%);
-  width: 43px;
-  opacity: 25;
-  z-index: 0;
-  pointer-events: none;
-}
 
 
 .logo {
